@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 게임-순서 맞추기</title>
+    <link rel="stylesheet" href="./Cardgame.css">
+</head>
+<body>
+    <div id="container" class="no-drag">
+        <div class="board">
+            <header class="menu">
+                <nav class="menu__nav">
+                    <div class="menu__nav-time">
+                        <strong id="player-time" class="blink" aria-label="남은 시간"></strong>
+                    </div>
+                    <div class="menu__nav-stage">
+                        STAGE<strong id="player-stage" aria-label="스테이지"></strong>
+                    </div>
+                    <div class="menu__nav-life">
+                        <strong id="player-life"  aria-label="life"></strong>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="game">
+                <div class="game__board">
+                </div>
+            </main>
+
+            <div class="stage-clear"></div>
+        </div>
+
+        <div class="modal modal-layer">
+            <div class="modal__content">
+                <div class="modal__content-title">
+                </div>
+                <button class="white-button modal__content-close-button" type="button">
+                    닫기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Cardgame.js"></script>
+</body>
+</html>
